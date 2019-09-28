@@ -64,8 +64,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .flex();
     @media @phone {
       flex-direction: column-reverse;
       padding: 15px;
@@ -91,11 +90,16 @@
         width: 30%;
         padding: 10px;
         .buttons(#23293B, white, 2rem);
+        
         @media @phone {
           .buttons(#23293B, white, 2rem);
           width: 100%;
           padding: 25px;
         }
+      }
+      div:hover {
+        background-color: #454A59;
+        color: #23293B;
       }
     }
 

@@ -168,6 +168,14 @@ p {
   background: #F1F1F1;
   margin-top: 15px;
 }
+@keyframes navbar {
+  from {
+    color: #F1F1F1;
+  }
+  to {
+    color: black;
+  }
+}
 @media (max-width: 500px) {
   .nav-bar {
     width: 100%;
@@ -188,6 +196,8 @@ p {
   text-decoration: none;
   font-size: 1.5rem;
   color: black;
+  animation-name: navbar;
+  animation-duration: 4s;
 }
 footer {
   color: #22283B;
@@ -289,6 +299,10 @@ footer {
     width: 100%;
     padding: 25px;
   }
+}
+.home .walk .walk-text div:hover {
+  background-color: #454A59;
+  color: #23293B;
 }
 .home .walk .walk-img {
   width: 46%;
