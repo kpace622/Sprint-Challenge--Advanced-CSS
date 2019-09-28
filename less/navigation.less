@@ -1,1 +1,35 @@
 // Navigation code here
+.nav-bar {
+    @keyframes navbar {
+        from {color: #F1F1F1;}
+        to {color: black;}
+    }
+    width: 100%;
+    .flex();
+    flex-direction: column;
+    background: #F1F1F1;
+    margin-top: 15px;
+    @media @phone {
+        width: 100%;
+    }
+   
+    h1 {
+        margin: 10px;
+        font-size: 4rem;
+        text-align: center;
+        }
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        a {
+            margin: 10px 20px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+            animation-name: navbar;
+            animation-duration: 4s;
+
+        }
+    }
+}
